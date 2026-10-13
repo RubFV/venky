@@ -1,2 +1,8 @@
 # xournalpp
 *.xopp
+
+# sqlite
+*.db
+
+# idea
+*.idea/
