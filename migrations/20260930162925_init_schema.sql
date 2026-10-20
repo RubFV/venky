@@ -31,7 +31,7 @@ CREATE TABLE kanji_term (
     kanji_id INTEGER NOT NULL,
     PRIMARY KEY (term_id, kanji_id),
     FOREIGN KEY (term_id) REFERENCES terms(id) ON DELETE CASCADE,
-    FOREIGN KEY (kanji_id) REFERENCES kanji(id) ON DELETE CASCADE
+    FOREIGN KEY (kanji_id) REFERENCES kanjis(id) ON DELETE CASCADE
 );
 
 CREATE TABLE category_term (
