@@ -19,7 +19,7 @@ func main() {
 		}
 	}()
 
-	db, err := db.Start()
+	db, err := db.Start("venkyData.db")
 	if err != nil {
 		log.Panicf("error al iniciar la base de datos: %v", err)
 	}

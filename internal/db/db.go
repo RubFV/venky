@@ -9,9 +9,9 @@ import (
 	_ "modernc.org/sqlite"
 )
 
-func Start() (*sql.DB, error) {
+func Start(dsn string) (*sql.DB, error) {
 
-	db, err := sql.Open("sqlite", "venkyData.db")
+	db, err := sql.Open("sqlite", dsn)
 	if err != nil {
 		return nil, fmt.Errorf("error al abrir la base de datos (%w)", err)
 	}
